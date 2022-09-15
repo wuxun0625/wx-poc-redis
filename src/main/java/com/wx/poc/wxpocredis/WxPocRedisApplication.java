@@ -54,7 +54,7 @@ public class WxPocRedisApplication implements CommandLineRunner {
 		// Redis streams get messages by read
 		stringTypePoc.redisReadStreamsMsg(id3.toString());
 		// Add message for test streams listener
-		System.out.println("===============Start to send messages into Redis streams for group read===================");
+		System.out.println("===============Start to send messages into Redis streams for group read==================");
 		for(int i=0;i<100;i++) {
 			stringTypePoc.redisAddStreamsMsg("test_streams_02","奥特曼" + i, "乡秀树" + i, "泽斯蒂姆光线" + i);
 		}
